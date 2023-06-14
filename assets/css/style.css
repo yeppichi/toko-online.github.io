@@ -1,0 +1,112 @@
+body{
+  font-family: 'Quicksand', sans-serif;
+}
+
+nav,
+.list-group .khusus {
+  background-color: #e4a5ff;
+}
+.navbar-nav .nav-link{
+  border-radius: 10px;
+}
+
+.navbar-nav .nav-link:hover {
+  border-radius: 10px;
+  background-color:#db005b !important;
+  color: white;
+}
+
+.list-group .list-group-item:hover{
+  color:#e4a5ff;
+}
+
+.list-group .khusus:hover{
+  background-color:#db005b;
+  color: #e4a5ff;
+}
+
+h4, h5{
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo,
+.navbar-brand,
+.icon h5 i,
+.fa-angle-right,
+.list-group-item {
+  color: #db005b;
+}
+.card p {
+  margin-bottom: 3px;
+}
+
+.mt-2 .harga {
+  font-family: 'Raleway', sans-serif;
+  background-image: linear-gradient(to bottom right, #bacddb 30%, #e4a5ff 70%);
+}
+
+.mt-2 .detail {
+  background-color: #ffaac9;
+}
+
+.mt-2 .detail:hover {
+  background-color:#bacddb;
+}
+
+.row .card{
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.);
+}
+
+.img-hover {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.img-hover .img-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.img-hover:hover .img-front {
+  opacity: 0;
+}
+
+.img-hover:hover .img-back {
+  opacity: 1;
+}
+
+.modal img{
+  width: 500px;
+}
+
+.harga-detail{
+  color: #db005b;
+  font-family: 'Raleway', sans-serif;
+}
+
+#add-to-cart-btn{
+  background-color:#bacddb;
+}
+
+#add-to-cart-btn:hover{
+  background-image: linear-gradient(to bottom right, #bacddb 30%, #e4a5ff 70%);
+}
+
+.btn-addon{
+  background-color:#e4a5ff;
+}
+
+.btn-addon:hover{
+  background-image: linear-gradient(to bottom right, #bacddb 30%, #e4a5ff 70%);
+}
+
+.copyright {
+  background-color: #db005b;
+}

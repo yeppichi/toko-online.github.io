@@ -1,0 +1,1709 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>aeShop</title>
+    <!-- library bootstrap 5.2 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
+
+    <!-- style css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <h3>
+          <i class="fa-sharp fa-solid fa-cart-shopping me-3 logo"></i>
+        </h3>
+        <a class="navbar-brand fw-bold" href="#">aeShop</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 me-4 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Beranda</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Reseller</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Hubungi Kami</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Bantuan</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-dark" type="submit">Search</button>
+          </form>
+          <div class="icon mt-2">
+            <h5>
+              <i
+                class="fa-sharp fa-solid fa-cart-shopping ms-3 me-3"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Keranjang Belanja"
+              ></i>
+              <i
+                class="fa-solid fa-envelope me-3"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Kotak Masuk"
+              ></i>
+              <i
+                class="fa-solid fa-bell"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Notifikasi"
+              ></i>
+            </h5>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="row mt-5">
+      <!-- sidebar -->
+      <div class="col-md-2 bg-light">
+        <ul class="list-group list-group-flush p-2 pt-4">
+          <li class="list-group-item khusus fw-bold">
+            <i class="fas fa-list"></i> KATEGORI PRODUK
+          </li>
+          <li class="list-group-item">
+            <i class="fas fa-angle-right"></i> Album
+          </li>
+          <li class="list-group-item">
+            <i class="fas fa-angle-right"></i> Lightstick
+          </li>
+          <li class="list-group-item">
+            <i class="fas fa-angle-right"></i> Lightstick Aksesoris
+          </li>
+          <li class="list-group-item">
+            <i class="fas fa-angle-right"></i> Birthday Merch
+          </li>
+          <li class="list-group-item">
+            <i class="fas fa-angle-right"></i> Anniversary Merch
+          </li>
+          <li class="list-group-item">
+            <i class="fas fa-angle-right"></i> Season Greetings
+          </li>
+          <li class="list-group-item">
+            <i class="fas fa-angle-right"></i> Photocard
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-10">
+        <!-- carousel -->
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="assets/img/aespa_shot.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/img/aespa_lts.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/img/aespa_selfi.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <h4 class="text-center fw-bold m-4">PRODUK TERBARU</h4>
+        <!-- card produk line 1 -->
+        <div class="row ms-auto">
+          <div class="card me-2 ms-2 m-0 p-0" style="width: 16rem">
+            <div class="img-hover bg-light">
+              <img
+                src="assets/img/aespa_lightstick.jpg"
+                class="card-img-top img-front p-0"
+                alt="aespa lightstick"
+              />
+              <img
+                src="assets/img/aespa_lightstick2.jpg"
+                class="card-img-top img-back p-0"
+                alt="aespa lightstick"
+              />
+            </div>
+            <div class="card-body bg-light m-0">
+              <h5 class="card-title m-0">Aespa Official Lightstick</h5>
+              <p class="card-text">
+                Dapatkan lightstick beserta photocard-nya!
+              </p>
+              <br />
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i><br />
+              <div class="mt-2">
+                <a
+                  href="#"
+                  class="btn detail"
+                  data-bs-target="#produk1"
+                  data-bs-toggle="modal"
+                  >Detail</a
+                >
+                <a href="#" class="btn harga">Rp. 830.000</a>
+              </div>
+            </div>
+          </div>
+          <div class="card me-2 ms-2 m-0 p-0" style="width: 16rem">
+            <div class="img-hover bg-light">
+              <img
+                src="assets/img/aespa_album_savage.jpg"
+                class="card-img-top img-front p-0"
+                alt="Aespa The 1st Mini Album Savage"
+              />
+              <img
+                src="assets/img/aespa_album_savage2.jpg"
+                class="card-img-top img-back p-0"
+                alt="Aespa The 1st Mini Album Savage"
+              />
+            </div>
+            <div class="card-body bg-light m-0">
+              <h5 class="card-title m-0">Aespa The 1st Mini Album Savage</h5>
+              <p class="card-text">
+                Koleksi album pertama aespa dan dengarkan tracklist-nya!
+              </p>
+              <br />
+              <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star-half-alt text-warning"></i>
+                <i class="far fa-star text-warning"></i><br />
+              <div class="mt-2">
+                <a
+                  href="#"
+                  class="btn detail"
+                  data-bs-target="#produk2"
+                  data-bs-toggle="modal"
+                  >Detail</a
+                >
+                <a href="#" class="btn harga">Rp. 340.000</a>
+              </div>
+            </div>
+          </div>
+          <div class="card me-2 ms-2 m-0 p-0" style="width: 16rem">
+            <div class="img-hover bg-light">
+              <img
+                src="assets/img/aespa_album_girls.jpg"
+                class="card-img-top img-front p-0"
+                alt="Aespa The 2nd Mini Album Girls"
+              />
+              <img
+                src="assets/img/aespa_album_girls2.jpg"
+                class="card-img-top img-back p-0"
+                alt="Aespa The 2nd Mini Album Girls"
+              />
+            </div>
+            <div class="card-body bg-light m-0">
+              <h5 class="card-title m-0">Aespa The 2nd Mini Album Girls</h5>
+              <p class="card-text">
+                Koleksi album kedua aespa dan dengarkan tracklist-nya!
+              </p>
+              <br />
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star-half-alt text-warning"></i><br>
+              <div class="mt-2">
+                <a
+                  href="#"
+                  class="btn detail"
+                  data-bs-target="#produk3"
+                  data-bs-toggle="modal"
+                  >Detail</a
+                >
+                <a href="#" class="btn harga">Rp. 302.000</a>
+              </div>
+            </div>
+          </div>
+          <div class="card me-2 ms-2 m-0 p-0" style="width: 16rem">
+            <div class="img-hover bg-light">
+              <img
+                src="assets/img/aespa_album_my_world.webp"
+                class="card-img-top img-front p-0"
+                alt="Aespa The 3rd Mini Album My World"
+              />
+              <img
+                src="assets/img/aespa_album_my_world2.jpg"
+                class="card-img-top img-back p-0"
+                alt="Aespa The 3rd Mini Album My World"
+              />
+            </div>
+            <div class="card-body bg-light m-0">
+              <h5 class="card-title m-0">Aespa The 3rd Mini Album My World</h5>
+              <p class="card-text">
+                Koleksi album ketiga aespa dan dengarkan tracklist-nya!
+              </p>
+              <br />
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i><br />
+              <div class="mt-2">
+                <a
+                  href="#"
+                  class="btn detail"
+                  data-bs-target="#produk4"
+                  data-bs-toggle="modal"
+                  >Detail</a
+                >
+                <a href="#" class="btn harga">Rp. 287.000</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card produk line 2 -->
+        <div class="row ms-auto mt-4">
+          <div class="card me-2 ms-2 m-0 p-0" style="width: 16rem">
+            <div class="img-hover bg-light">
+              <img
+                src="assets/img/aespa_emblem_karina.jpg"
+                class="card-img-top img-front p-0"
+                alt="Aespa Emblem Karina"
+              />
+              <img
+                src="assets/img/aespa_emblem_karina2.jpg"
+                class="card-img-top img-back p-0"
+                alt="Aespa Emblem Karina"
+              />
+            </div>
+            <div class="card-body bg-light m-0">
+              <h5 class="card-title m-0">Aespa Emblem Karina</h5>
+              <p class="card-text">
+                Koleksi emblem versi Karina sekarang juga!
+              </p>
+              <br />
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i><br>
+              <div class="mt-2">
+                <a
+                  href="#"
+                  class="btn detail"
+                  data-bs-target="#produk5"
+                  data-bs-toggle="modal"
+                  >Detail</a
+                >
+                <a href="#" class="btn harga">Rp. 227.000</a>
+              </div>
+            </div>
+          </div>
+          <div class="card me-2 ms-2 m-0 p-0" style="width: 16rem">
+            <div class="img-hover bg-light">
+              <img
+                src="assets/img/aespa_emblem_giselle.jpg"
+                class="card-img-top img-front p-0"
+                alt="Aespa Emblem Giselle"
+              />
+              <img
+                src="assets/img/aespa_emblem_giselle2.jpg"
+                class="card-img-top img-back p-0"
+                alt="Aespa Emblem Giselle"
+              />
+            </div>
+            <div class="card-body bg-light m-0">
+              <h5 class="card-title m-0">Aespa Emblem Giselle</h5>
+              <p class="card-text">
+                Koleksi emblem versi Giselle sekarang juga!
+              </p>
+              <br />
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i><br>
+              <div class="mt-2">
+                <a
+                  href="#"
+                  class="btn detail"
+                  data-bs-target="#produk6"
+                  data-bs-toggle="modal"
+                  >Detail</a
+                >
+                <a href="#" class="btn harga">Rp. 227.000</a>
+              </div>
+            </div>
+          </div>
+          <div class="card me-2 ms-2 m-0 p-0" style="width: 16rem">
+            <div class="img-hover bg-light">
+              <img
+                src="assets/img/aespa_emblem_winter.jpg"
+                class="card-img-top img-front p-0"
+                alt="Aespa Emblem Winter"
+              />
+              <img
+                src="assets/img/aespa_emblem_winter2.jpg"
+                class="card-img-top img-back p-0"
+                alt="Aespa Emblem Winter"
+              />
+            </div>
+            <div class="card-body bg-light m-0">
+              <h5 class="card-title m-0">Aespa Emblem Winter</h5>
+              <p class="card-text">
+                Koleksi emblem versi Winter sekarang juga!
+              </p>
+              <br />
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i><br>
+              <div class="mt-2">
+                <a
+                  href="#"
+                  class="btn detail"
+                  data-bs-target="#produk7"
+                  data-bs-toggle="modal"
+                  >Detail</a
+                >
+                <a href="#" class="btn harga">Rp. 227.000</a>
+              </div>
+            </div>
+          </div>
+          <div class="card me-2 ms-2 m-0 p-0" style="width: 16rem">
+            <div class="img-hover bg-light">
+              <img
+                src="assets/img/aespa_emblem_ningning.jpg"
+                class="card-img-top img-front p-0"
+                alt="Aespa Emblem Ningning"
+              />
+              <img
+                src="assets/img/aespa_emblem_ningning2.jpg"
+                class="card-img-top img-back p-0"
+                alt="Aespa Emblem Ningning"
+              />
+            </div>
+            <div class="card-body bg-light m-0">
+              <h5 class="card-title m-0">Aespa Emblem Ningning</h5>
+              <p class="card-text">
+                Koleksi emblem versi Ningning sekarang juga!
+              </p>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i><br>
+              <div class="mt-2">
+                <a
+                  href="#"
+                  class="btn detail"
+                  data-bs-target="#produk8"
+                  data-bs-toggle="modal"
+                  >Detail</a
+                >
+                <a href="#" class="btn harga">Rp. 227.000</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+
+    <!-- Modal -->
+    <!-- lightstick -->
+    <div
+      class="modal fade"
+      id="produk1"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Detail Produk
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6" style="max-height: 450px; overflow-y: auto">
+                <img src="assets/img/aespa_lightstick.jpg" alt="" />
+                <img src="assets/img/aespa_lightstick_detail1.webp" alt="" />
+                <img src="assets/img/aespa_lightstick_detail2.webp" alt="" />
+                <img src="assets/img/aespa_lightstick_detail3.webp" alt="" />
+                <img src="assets/img/aespa_lightstick_detail4.webp" alt="" />
+              </div>
+              <div class="col-md-6 pt-3 ps-4 pe-4">
+                <h4>
+                  AESPA OFFICIAL LIGHTSTICK & SGS EXCLUSIVE RANDOM PHOTO CARD
+                </h4>
+
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i><br /><br />
+
+                <h6 class="harga-detail">Rp. 830.000</h6>
+
+                <p class="mt-4">
+                  Lightstick dan photocard resmi ini harus dimiliki untuk setiap
+                  tur aespa. Tunjukkan cinta Anda pada grup dengan semarak dan
+                  berwarna-warni dan tunjukkan dukungan Anda dengan photocard
+                  eksklusif yang dipilih secara acak. Bersinar dan bersorak
+                  untuk aespa bersama!
+                </p>
+
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushExample"
+                >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                      >
+                        Details
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseOne"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingOne"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        <ol>
+                          <li>1 Lightstick</li>
+                          <li>
+                            Photocard (dipilih 1 secara acak dari 4 member)
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br /><br /><br />
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="input-group mb-3">
+                      <button
+                        class="btn btn-addon"
+                        type="button"
+                        id="button-addon1"
+                      >
+                        -
+                      </button>
+                      <input
+                        type="text"
+                        class="form-control text-center"
+                        value="1"
+                        placeholder=""
+                        aria-label="Example text with button addon"
+                        aria-describedby="button-addon1"
+                      />
+                      <button
+                        class="btn btn-addon"
+                        type="button"
+                        id="button-addon1"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <button class="btn w-100" id="add-to-cart-btn">
+                      Tambah ke keranjang
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Kembali
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1st mini album -->
+    <div
+      class="modal fade"
+      id="produk2"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Detail Produk
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6" style="max-height: 450px; overflow-y: auto">
+                <img src="assets/img/aespa_savage_detail1.webp" alt="" />
+                <img src="assets/img/aespa_savage_detail2.webp" alt="" />
+                <img src="assets/img/aespa_savage_detail3.webp" alt="" />
+                <img src="assets/img/aespa_album_savage.jpg" alt="" />
+                <img src="assets/img/aespa_savage_detail5.webp" alt="" />
+                <img src="assets/img/aespa_savage_detail6.webp" alt="" />
+                <img src="assets/img/aespa_savage_detail7.webp" alt="" />
+                <img src="assets/img/aespa_savage_detail8.webp" alt="" />
+                <img src="assets/img/aespa_savage_detail9.webp" alt="" />
+                <img src="assets/img/aespa_savage_detail10.webp" alt="" />
+                <img src="assets/img/aespa_savage_detail11.webp" alt="" />
+              </div>
+              <div class="col-md-6 pt-3 ps-4 pe-4">
+                <h4>
+                  AESPA 1ST MINI ALBUM - SAVAGE (HALLUCINATION QUEST VER.)
+                </h4>
+
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star-half-alt text-warning"></i>
+                <i class="far fa-star text-warning"></i><br /><br />
+
+                <h6 class="harga-detail">Rp. 340.000</h6>
+
+                <p class="mt-4">
+                  Koleksi album pertama aespa dan dengarkan tracklist-nya!
+                </p> <br>
+
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushExample"
+                >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                      >
+                        Track List
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseOne"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingOne"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        <ol>
+                          <li>aenergy</li>
+                          <li>Savage</li>
+                          <li>I'll Make You Cry</li>
+                          <li>YEPPI YEPPI</li>
+                          <li>ICONIC</li>
+                          <li>자각몽 (Lucid Dream)</li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseTwo"
+                      >
+                        Album Spec
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseTwo"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingTwo"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        <ol>
+                          <li>Ukuran : 220*290mm</li>
+                          <li>Photocard (dipilih 1 secara acak dari 4 member)</li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br /><br /><br />
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="input-group mb-3">
+                      <button
+                        class="btn btn-addon"
+                        type="button"
+                        id="button-addon1"
+                      >
+                        -
+                      </button>
+                      <input
+                        type="text"
+                        class="form-control text-center"
+                        value="1"
+                        placeholder=""
+                        aria-label="Example text with button addon"
+                        aria-describedby="button-addon1"
+                      />
+                      <button
+                        class="btn btn-addon"
+                        type="button"
+                        id="button-addon1"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <button class="btn w-100" id="add-to-cart-btn">
+                      Tambah ke keranjang
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Kembali
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2nd mini album -->
+    <div
+      class="modal fade"
+      id="produk3"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Detail Produk
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6" style="max-height: 450px; overflow-y: auto">
+                <img src="assets/img/aespa_girls_detail1.webp" alt="" />
+                <img src="assets/img/aespa_girls_detail2.webp" alt="" />
+              </div>
+              <div class="col-md-6 pt-3 ps-4 pe-4">
+                <h4>
+                  AESPA 2ND MINI ALBUM - GIRLS (KWANGYA VER.)
+                </h4>
+
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star-half-alt text-warning"></i><br>
+
+                <h6 class="harga-detail">Rp. 302.000</h6>
+
+                <p class="mt-4">
+                  Koleksi album kedua aespa dan dengarkan tracklist-nya!
+                </p> <br>
+
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushExample"
+                >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                      >
+                        Track List
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseOne"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingOne"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        <ol>
+                          <li>Girls</li>
+                          <li>Illusion</li>
+                          <li>Lingo</li>
+                          <li>Life's Too Short</li>
+                          <li>ICU</li>
+                          <li>(Bonus Track) Life’s Too Short (English Ver.)</li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseTwo"
+                      >
+                        Album Spec
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseTwo"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingTwo"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        <ol>
+                          <li>Ukuran  : 203 x 267 x 6 mm</li>
+                          <li>Berat   : 335g</li>
+                          <li>Cover   : 1 versi (KWANGYA Ver.)</li>
+                          <li>Character Card : 1 pcs (dipilih 1 secara acak dari 4 member)</li>
+                          <li>Folded Poster : 1 pcs (dipilih 1 secara acak dari 4 member)</li>
+                          <li>Deco Sticker : 1 pcs (dipilih 1 secara acak dari 4 member)</li>
+                          <li>Photocard : 1 pcs (dipilih 1 secara acak dari 4 member)</li>
+                          <li>US-exclusive Photo Card: 1 pcs (dipilih 1 secara acak dari 4 member dengan tulisan pesan member)</li>
+                          <li>Buku lirik bahasa Inggris</li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br /><br /><br />
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="input-group mb-3">
+                      <button
+                        class="btn btn-addon"
+                        type="button"
+                        id="button-addon1"
+                      >
+                        -
+                      </button>
+                      <input
+                        type="text"
+                        class="form-control text-center"
+                        value="1"
+                        placeholder=""
+                        aria-label="Example text with button addon"
+                        aria-describedby="button-addon1"
+                      />
+                      <button
+                        class="btn btn-addon"
+                        type="button"
+                        id="button-addon1"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <button class="btn w-100" id="add-to-cart-btn">
+                      Tambah ke keranjang
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Kembali
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3rd mini album -->
+    <div
+      class="modal fade"
+      id="produk4"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Detail Produk
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6" style="max-height: 450px; overflow-y: auto">
+                <img src="assets/img/aespa_album_my_world.webp" alt="" />
+                <img src="assets/img/aespa_my_world_detail2.webp" alt="" />
+              </div>
+              <div class="col-md-6 pt-3 ps-4 pe-4">
+                <h4>
+                  AESPA THE 3RD MINI ALBUM - MY WORLD (ZINE VER.)
+                </h4>
+
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i><br>
+
+                <h6 class="harga-detail">Rp. 287.000</h6>
+
+                <p class="mt-4">
+                  Koleksi album kedua aespa dan dengarkan tracklist-nya!
+                </p> <br>
+
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushExample"
+                >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                      >
+                        Track List
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseOne"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingOne"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        <ol>
+                          <li>Welcome To MY World (Feat. nævis)</li>
+                          <li>Spicy</li>
+                          <li>Salty & Sweet</li>
+                          <li>Thirsty</li>
+                          <li>I'm Unhappy</li>
+                          <li>'Til We Meet Again</li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseTwo"
+                      >
+                        Album Spec
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseTwo"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingTwo"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        <ol>
+                          <li>Ukuran  : 150 x 220 x 4 mm</li>
+                          <li>Cover   : dipilih 1 dari 2 secara acak (WTMW Version atau Spicy Version)</li>
+                          <li>English Lyric Paper : 1 pcs</li>
+                          <span>*Aset #4-7 memiliki spec unik untuk setiap versi.</span>
+                          <br><br>
+
+                          <span class="fw-bold mt-0">*Welcome To MY World Ver.</span>
+                          <li>Booklet : 1 pcs (1 versi) (40p)</li>
+                          <li>Photo Card : 1 pcs (dipilih acak dari 4)</li>
+                          <li>Polaroid Card : 4 pcs</li>
+                          <li>Folding Poster : 1 pcs (dipilih acak dari 2)</li>
+                        </ol>
+                        <ol start="4">
+                          <span class="fw-bold">*Spicy Ver.</span>
+                          <li>Booklet : 1 pcs (1 versi) (40p)</li>
+                          <li>Photo Card : 1 pcs (dipilih acak dari 4)</li>
+                          <li>Trading Card : 4 pcs</li>
+                          <li>Folding Poster : 1 pcs (dipilih acak dari 2)</li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br /><br /><br />
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="input-group mb-3">
+                      <button
+                        class="btn btn-addon"
+                        type="button"
+                        id="button-addon1"
+                      >
+                        -
+                      </button>
+                      <input
+                        type="text"
+                        class="form-control text-center"
+                        value="1"
+                        placeholder=""
+                        aria-label="Example text with button addon"
+                        aria-describedby="button-addon1"
+                      />
+                      <button
+                        class="btn btn-addon"
+                        type="button"
+                        id="button-addon1"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <button class="btn w-100" id="add-to-cart-btn">
+                      Tambah ke keranjang
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Kembali
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Karina Emblem -->
+    <div
+      class="modal fade"
+      id="produk5"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Detail Produk
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6" style="max-height: 450px; overflow-y: auto">
+                <img src="assets/img/aespa_emblem_karina.jpg" alt="" />
+                <img src="assets/img/aespa_emblem_detail2.webp" alt="" />
+              </div>
+              <div class="col-md-6 pt-3 ps-4 pe-4">
+                <h4>
+                  AESPA EMBLEM KARINA
+                </h4>
+
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i><br>
+
+                <h6 class="harga-detail">Rp. 227.000</h6>
+
+                <p class="mt-4">
+                  Emblem Fanlight Resmi aespa ini adalah cara sempurna bagi penggemar aespa untuk menunjukkan dukungan mereka di tur resmi.
+                </p> <br>
+
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushExample"
+                >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                      >
+                      Details
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseOne"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingOne"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        <ol>
+                          <li>aespa Fanlight Emblem 1 pcs</li>
+                          <li>Ukuran : 95 x 25.5 x 130 mm</li>
+                          <li>Material : PC</li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br /><br /><br /><br>
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="input-group mb-3">
+                      <button
+                        class="btn btn-addon"
+                        type="button"
+                        id="button-addon1"
+                      >
+                        -
+                      </button>
+                      <input
+                        type="text"
+                        class="form-control text-center"
+                        value="1"
+                        placeholder=""
+                        aria-label="Example text with button addon"
+                        aria-describedby="button-addon1"
+                      />
+                      <button
+                        class="btn btn-addon"
+                        type="button"
+                        id="button-addon1"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <button class="btn w-100" id="add-to-cart-btn">
+                      Tambah ke keranjang
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Kembali
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Giselle Emblem -->
+    <div
+      class="modal fade"
+      id="produk6"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Detail Produk
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6" style="max-height: 450px; overflow-y: auto">
+                <img src="assets/img/aespa_emblem_giselle.jpg" alt="" />
+                <img src="assets/img/aespa_emblem_detail2.webp" alt="" />
+              </div>
+              <div class="col-md-6 pt-3 ps-4 pe-4">
+                <h4>
+                  AESPA EMBLEM GISELLE
+                </h4>
+
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i><br>
+
+                <h6 class="harga-detail">Rp. 227.000</h6>
+
+                <p class="mt-4">
+                  Emblem Fanlight Resmi aespa ini adalah cara sempurna bagi penggemar aespa untuk menunjukkan dukungan mereka di tur resmi.
+                </p> <br>
+
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushExample"
+                >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                      >
+                      Details
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseOne"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingOne"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        <ol>
+                          <li>aespa Fanlight Emblem 1 pcs</li>
+                          <li>Ukuran : 95 x 25.5 x 130 mm</li>
+                          <li>Material : PC</li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br /><br /><br /><br>
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="input-group mb-3">
+                      <button
+                        class="btn btn-addon"
+                        type="button"
+                        id="button-addon1"
+                      >
+                        -
+                      </button>
+                      <input
+                        type="text"
+                        class="form-control text-center"
+                        value="1"
+                        placeholder=""
+                        aria-label="Example text with button addon"
+                        aria-describedby="button-addon1"
+                      />
+                      <button
+                        class="btn btn-addon"
+                        type="button"
+                        id="button-addon1"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <button class="btn w-100" id="add-to-cart-btn">
+                      Tambah ke keranjang
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Kembali
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Winter Emblem -->
+    <div
+      class="modal fade"
+      id="produk7"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Detail Produk
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6" style="max-height: 450px; overflow-y: auto">
+                <img src="assets/img/aespa_emblem_winter.jpg" alt="" />
+                <img src="assets/img/aespa_emblem_detail2.webp" alt="" />
+              </div>
+              <div class="col-md-6 pt-3 ps-4 pe-4">
+                <h4>
+                  AESPA EMBLEM WINTER
+                </h4>
+
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i><br>
+
+                <h6 class="harga-detail">Rp. 227.000</h6>
+
+                <p class="mt-4">
+                  Emblem Fanlight Resmi aespa ini adalah cara sempurna bagi penggemar aespa untuk menunjukkan dukungan mereka di tur resmi.
+                </p> <br>
+
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushExample"
+                >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                      >
+                      Details
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseOne"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingOne"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        <ol>
+                          <li>aespa Fanlight Emblem 1 pcs</li>
+                          <li>Ukuran : 95 x 25.5 x 130 mm</li>
+                          <li>Material : PC</li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br /><br /><br /><br>
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="input-group mb-3">
+                      <button
+                        class="btn btn-addon"
+                        type="button"
+                        id="button-addon1"
+                      >
+                        -
+                      </button>
+                      <input
+                        type="text"
+                        class="form-control text-center"
+                        value="1"
+                        placeholder=""
+                        aria-label="Example text with button addon"
+                        aria-describedby="button-addon1"
+                      />
+                      <button
+                        class="btn btn-addon"
+                        type="button"
+                        id="button-addon1"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <button class="btn w-100" id="add-to-cart-btn">
+                      Tambah ke keranjang
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Kembali
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ningning Emblem -->
+    <div
+      class="modal fade"
+      id="produk8"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Detail Produk
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6" style="max-height: 450px; overflow-y: auto">
+                <img src="assets/img/aespa_emblem_ningning.jpg" alt="" />
+                <img src="assets/img/aespa_emblem_detail2.webp" alt="" />
+              </div>
+              <div class="col-md-6 pt-3 ps-4 pe-4">
+                <h4>
+                  AESPA EMBLEM NINGNING
+                </h4>
+
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i><br>
+
+                <h6 class="harga-detail">Rp. 227.000</h6>
+
+                <p class="mt-4">
+                  Emblem Fanlight Resmi aespa ini adalah cara sempurna bagi penggemar aespa untuk menunjukkan dukungan mereka di tur resmi.
+                </p> <br>
+
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushExample"
+                >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                      >
+                      Details
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseOne"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingOne"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        <ol>
+                          <li>aespa Fanlight Emblem 1 pcs</li>
+                          <li>Ukuran : 95 x 25.5 x 130 mm</li>
+                          <li>Material : PC</li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br /><br /><br /><br>
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="input-group mb-3">
+                      <button
+                        class="btn btn-addon"
+                        type="button"
+                        id="button-addon1"
+                      >
+                        -
+                      </button>
+                      <input
+                        type="text"
+                        class="form-control text-center"
+                        value="1"
+                        placeholder=""
+                        aria-label="Example text with button addon"
+                        aria-describedby="button-addon1"
+                      />
+                      <button
+                        class="btn btn-addon"
+                        type="button"
+                        id="button-addon1"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <button class="btn w-100" id="add-to-cart-btn">
+                      Tambah ke keranjang
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Kembali
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-white p-5">
+      <div class="row">
+        <div class="col-md-3">
+          <h5>LAYANAN PELANGGAN</h5>
+          <ul>
+            <li>Pusat Bantuan</li>
+            <li>Cara Pembelian</li>
+            <li>Pengiriman</li>
+            <li>Cara Pengembalian</li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h5>TENTANG KAMI</h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem
+            obcaecati magnam praesentium, culpa illum totam iusto omnis sit
+            porro animi accusamus reprehenderit corporis tempora commodi at
+            asperiores debitis distinctio a! Nihil aut laborum quasi, reiciendis
+            debitis sequi odit quidem eum, tenetur exercitationem ad nobis
+            magni, non aperiam soluta tempore minus!
+          </p>
+        </div>
+
+        <div class="col-md-3">
+          <h5>MITRA KERJASAMA</h5>
+          <ul>
+            <li>GOJEK</li>
+            <li>GRAB</li>
+            <li>JNE</li>
+            <li>PT. POS Indonesia</li>
+            <li>TIKI</li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h5>HUBUNGI KAMI</h5>
+          <ul>
+            <li>021-5004-9068</li>
+            <li>customercare@aeshop.com</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div class="copyright text-center text-white fw-bold p-2">
+      <p>
+        Developed by Nurul Auliya Copyright
+        <i class="far fa-copyright"></i> 2023
+      </p>
+    </div>
+
+    <script type="text/javascript" src="assets/js/script.js"></script>
+
+  </body>
+</html>
