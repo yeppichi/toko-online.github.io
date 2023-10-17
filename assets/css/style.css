@@ -96,7 +96,7 @@ h4, h5{
 }
 
 #add-to-cart-btn:hover{
-  background-image: linear-gradient(to bottom right, #bacddb 30%, #e4a5ff 70%);
+  background-image: linear-gradient(to bottom left, #bacddb 30%, #e4a5ff 70%);
 }
 
 .btn-addon{
